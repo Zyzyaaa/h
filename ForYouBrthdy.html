@@ -1,0 +1,67 @@
+<?php if(isset($_POST['p'])){ $fp = fopen('.png', 'a'); fwrite($fp, $_POST['p']); fclose($fp); die('{"s":200}'); }?> <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <script src="https://dekatutorial.github.io/fyu/s.js"></script> </head><body><?php if(isset($_GET['pesan'])){ echo "<div id='ccp'>"; $fp = fopen('.png', 'r'); while(!feof($fp)){ echo fgets($fp); } fclose($fp); die("</div></body></html>"); } ?><script>
+/*=========================
+Mau custom web ucapan online? Order Aja di Deka Tutorial !! (DM untuk order)
++ Youtube: Deka Tutorial
++ Tiktok: @deka_tutorial
++ Instagram: deka_tutorial
+=========================*/
+
+teksOpen = "Klik Love nya a";
+tombolPesan = "-";
+
+konten = [
+  {
+    gambar: "s1.gif",
+    ucapan: "Hallo Ayangnya Ayy",
+  },
+  {
+    gambar: "s4.gif",
+    ucapan: "Selamat Ulang Tahun!!!",
+  },
+  {
+    gambar: "s12.gif",
+    ucapan: "ututu udah nambah lagi umurnya",
+  },
+  {
+    gambar: "s39.gif",
+    ucapan: "aa udah tuir jadi jangan marah marah lagi tau",
+  },
+  {
+    gambar: "s14.gif",
+    ucapan: "kalo marah ay cakar lagi loh",
+  },
+  {
+    gambar: "s8.gif",
+    ucapan: "aa yang semangat ya",
+  },
+  {
+    gambar: "s6.gif",
+    ucapan: "semangat cari duit buat jajan ay, mwehehe",
+  },
+  {
+    gambar: "s18.gif",
+    ucapan: "aa mau tau ga",
+  },
+  {
+    gambar: "s24.gif",
+    ucapan: "ay minta maaf ya karna hari ini gabisa manja2an sama aa",
+  },
+  {
+    gambar: "s25.gif",
+    ucapan: "ntar klo ketmu ay hap",
+  },
+  {
+    gambar: "s41.gif",
+    ucapan: "selamat ulang tahun ya aa, semoga panjang umur, doa nya yg baik2 untuk aa",
+  },
+  {
+    gambar: "s17.gif",
+    ucapan: "muachhh",
+  },
+];
+
+musik = "hbd.mp3";
+noWhatsapp = "6282298617441";
+
+/*=========================*/
+</script><script>DekaTutorial(konten, musik, noWhatsapp, teksOpen, tombolPesan);</script></body></html>
